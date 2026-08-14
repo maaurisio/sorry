@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Leidy ❤</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blush: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              300: '#fda4af',
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48'
+            }
+          },
+          fontFamily: {
+            script: ['"Dancing Script"', 'cursive'],
+            serif: ['"Playfair Display"', 'serif']
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'beat': 'beat 1.2s ease-in-out infinite'
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' }
+            },
+            beat: {
+              '0%, 100%': { transform: 'scale(1)' },
+              '25%': { transform: 'scale(1.15)' },
+              '40%': { transform: 'scale(1)' },
+              '60%': { transform: 'scale(1.15)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-br from-blush-50 via-white to-blush-100 text-rose-900 min-h-screen relative overflow-hidden">
+
+  <!-- Corazones flotando -->
+  <div class="hearts">
+    <span class="heart">❤</span>
+    <span class="heart">❤</span>
+    <span class="heart">💗</span>
+    <span class="heart">❤</span>
+    <span class="heart">💕</span>
+    <span class="heart">❤</span>
+    <span class="heart">💗</span>
+    <span class="heart">❤</span>
+    <span class="heart">❤</span>
+    <span class="heart">💕</span>
+  </div>
+
+  <!-- Contenido -->
+  <main class="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 py-16 text-center">
+    <p class="font-script text-xl text-blush-500 mb-4 animate-float">Para la persona más importante</p>
+
+    <h1 class="font-script text-6xl sm:text-7xl md:text-8xl font-bold text-blush-500 mb-8 drop-shadow-sm">
+      Para Leidy
+    </h1>
+
+    <div class="animate-beat text-5xl mb-10 select-none" aria-hidden="true">❤️</div>
+
+    <div class="max-w-2xl space-y-8">
+      <section class="space-y-4">
+        <h2 class="font-serif text-3xl sm:text-4xl italic text-blush-400">Solo quiero decirte…</h2>
+        <p class="font-serif text-lg sm:text-xl leading-relaxed text-rose-800/90">
+          Que te amo más de lo que las palabras pueden expresar.
+          Cada día a tu lado es un regalo, y no hay rincón de mi corazón
+          que no lleve tu nombre.
+        </p>
+      </section>
+
+      <section class="bg-white/70 backdrop-blur-sm rounded-3xl shadow-xl shadow-blush-200/50 p-8 sm:p-10 space-y-4">
+        <h2 class="font-serif text-2xl sm:text-3xl font-semibold text-blush-500">Lo siento</h2>
+        <p class="font-serif text-base sm:text-lg leading-relaxed text-rose-800/90">
+          Sé que he cometido errores, y que te he lastimado cuando menos lo merecías.
+          No tengo excusas, solo la certeza de que quiero ser mejor por ti.
+        </p>
+        <p class="font-script text-2xl sm:text-3xl text-blush-500">
+          Perdóname, por favor.
+        </p>
+        <p class="font-serif text-base sm:text-lg leading-relaxed text-rose-800/90">
+          Quiero reparar cada momento de dolor y llenar nuestro camino de
+          cariño, comprensión y de todo lo bueno que nuestra historia merece.
+        </p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="font-serif text-3xl sm:text-4xl italic text-blush-400">Mi promesa</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="bg-blush-50 rounded-2xl p-5 border border-blush-200 shadow-sm">
+            <div class="text-3xl mb-2" aria-hidden="true">🤍</div>
+            <p class="font-serif text-base text-rose-800/90">Escucharte siempre, sin dejar que el orgullo gane.</p>
+          </div>
+          <div class="bg-blush-50 rounded-2xl p-5 border border-blush-200 shadow-sm">
+            <div class="text-3xl mb-2" aria-hidden="true">🌸</div>
+            <p class="font-serif text-base text-rose-800/90">Cuidar de ti y de nosotros todos los días.</p>
+          </div>
+          <div class="bg-blush-50 rounded-2xl p-5 border border-blush-200 shadow-sm">
+            <div class="text-3xl mb-2" aria-hidden="true">♾️</div>
+            <p class="font-serif text-base text-rose-800/90">Amarte sin condiciones, hoy y siempre.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="pt-4 space-y-2">
+        <p class="font-script text-3xl sm:text-4xl text-blush-500">
+          Con todo mi amor,
+        </p>
+        <p class="font-script text-3xl sm:text-4xl text-blush-600 font-bold">
+          Kevin ♥
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
